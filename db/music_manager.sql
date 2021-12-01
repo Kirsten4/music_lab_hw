@@ -13,6 +13,3 @@ CREATE TABLE albums(
     artist_id INT REFERENCES artists(id)
 );
 
-SELECT * FROM artists;
-INSERT INTO artists (name) VALUES ('Biffy Clyro');
-SELECT * FROM artists;
