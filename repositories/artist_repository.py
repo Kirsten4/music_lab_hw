@@ -40,7 +40,7 @@ def select_all():
 
 # Edit Artist
 def update(artist):
-    sql = "UPDATE artists SET (name) = (%s) WHERE id = %s"
+    sql = "UPDATE artists SET name = %s WHERE id = %s"
     values = [artist.name, artist.id]
     run_sql(sql,values)
 
